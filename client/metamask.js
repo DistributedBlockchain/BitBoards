@@ -31,10 +31,13 @@ const abi = [
     type: 'function',
   },
 ];
-const address = '0xdeadbeef123456789000000000000';
-const toAddress = '0xsendfundstome';
-const value = '100';
-const addr = '0x0000addressaddress';
+
+//FAKE DATA
+
+const address = '0x98ee18d7a1f7510B78b36f5a16471c7CD0c1c531';
+const toAddress = '0x5366fc68Ec44180E4a25b0Cd0E09A267D6Db3c71';//CONTRACT
+const value = 3//document.querySelector('input_0');
+const addr = '0x98ee18d7a1f7510B78b36f5a16471c7CD0c1c531';
 
 
 function initContract(contract) {
@@ -44,7 +47,7 @@ function initContract(contract) {
 }
 
 function listenForClicks (miniToken) {
-  console.log('doc ',document)
+  console.log('val ',value)
   var button = document.querySelector('button.bidsubmit')
   button.addEventListener('click', function() {
     miniToken.transfer(toAddress, value, { from: addr })

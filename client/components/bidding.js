@@ -18,7 +18,7 @@ export const Bidding = props => {
         <Input s={6} label="Bid amount" validate type="number" placeholder="0.001" step="0.001" min="0.001" max="10000000000000">
           <Icon>attach_money</Icon>
         </Input>
-        <Input s={6} label="Image URL" validate type="url">
+        <Input s={6} className="bidvalue" label="Image URL" validate type="url">
           <Icon>image</Icon>
         </Input>
       </Row>
