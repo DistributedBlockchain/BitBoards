@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans Bold"),
-    url("fonts/FiraSans-Bold.woff") format("woff");
+    url("../fonts/FiraSans-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans SemiBold"),
-    url("fonts/FiraSans-SemiBold.woff") format("woff");
+    url("../fonts/FiraSans-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans Bold Italic"),
-    url("fonts/FiraSans-BoldItalic.woff") format("woff");
+    url("../fonts/FiraSans-BoldItalic.woff") format("woff");
     font-weight: 700;
     font-style: italic;
 }
@@ -25,7 +25,7 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans Italic"),
-    url("fonts/FiraSans-Italic.woff") format("woff");
+    url("../fonts/FiraSans-Italic.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -33,7 +33,7 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans"),
-    url("fonts/FiraSans-Regular.woff") format("woff");
+    url("../fonts/FiraSans-Regular.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -42,7 +42,7 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans Medium"),
-    url("fonts/FiraSans-Medium.woff") format("woff");
+    url("../fonts/FiraSans-Medium.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -50,11 +50,10 @@
 @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans Light"),
-    url("fonts/FiraSans-Light.woff") format("woff");
+    url("../fonts/FiraSans-Light.woff") format("woff");
     font-weight: 200;
     font-style: normal;
 }
-
 
 html,
 body {
@@ -65,91 +64,10 @@ body {
     box-sizing: border-box;
 }
 
-.brochure {
-    font-family: "Fira Sans", Helvetica;
-    background-color: #3a3a3a;
-}
-
-.brochure-content {
-
-}
-
-.brochure-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0;
-}
-
-.brochure-header > h2 {
-    font-weight: 300;
-    font-style: italic;
-    margin-top: 0;
-}
-
-.brochure-attract {
-    border-top: 1px solid #3a3a3a;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.action-item {
-    display: flex;
-    flex-direction: row;
-}
-
-.brochure-image-listing {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 15px 0;
-}
-
-.brochure-image-container {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.brochure-image,
-.brochure-text {
-    width: 200px;
-}
-
-.brochure-image {
-    height: 200px;
-    border: 5px solid #fafafa;
-    border-radius: 100px;
-    overflow: hidden;
-}
-
-.brochure-text {
-    font-weight: 300;
-    font-style: normal;
-}
-
-.headlines,
-.testimontials {
-    width: 60%;
-}
-
-.testimontials {
-    padding-bottom: 15px;
-}
-
 .link {
     font-weight: bold;
     color: #792ded;
     padding: 0 10px;
-}
-
-.actions {
-    display: flex;
-    flex-direction: row;
 }
 
 .button {
@@ -160,9 +78,12 @@ body {
     color: #fafafa;
     padding: 15px 40px;
     margin: 0 15px;
+    border: 1px solid #6441a5;
 }
 
 .button:hover {
+    color: #ffffff;
+    filter: brightness(90%);
     background: linear-gradient(#2e253d, #6441a5);
 }
 
@@ -171,7 +92,7 @@ body {
 .color2 { background-color: #792ded; }
 .color3 { background-color: #6441a5; color: #fafafa; }
 .color4 { background-color: #2e253d; color: #fafafa; }
-.color5 { background-color: #1e1d21; }
+.color5 { background-color: #1e1d21; color: #fafafa; }
 .color6 { background-color: #3a3a3a; color: #fafafa; }
 
 .hairline > p { margin: 0; }
