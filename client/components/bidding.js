@@ -22,7 +22,7 @@ export const Bidding = props => {
           <Icon>image</Icon>
         </Input>
       </Row>
-        <Button id="bidsubmit" waves='light'>Submit Bid</Button>
+        <Button className="bidsubmit" waves='light'>Submit Bid</Button>
       <DisplayImage img={imageUrl} />
     </div>
   );
@@ -45,3 +45,4 @@ export default connect(mapState)(Bidding);
 Bidding.propTypes = {
   email: PropTypes.string,
 };
+

@@ -32,6 +32,10 @@ const abi = [
   },
 ];
 const address = '0xdeadbeef123456789000000000000';
+const toAddress = '0xsendfundstome';
+const value = '100';
+const addr = '0x0000addressaddress';
+
 
 function initContract(contract) {
   const MiniToken = contract(abi);
@@ -40,6 +44,7 @@ function initContract(contract) {
 }
 
 function listenForClicks (miniToken) {
+  console.log('doc ',document)
   var button = document.querySelector('button.bidsubmit')
   button.addEventListener('click', function() {
     miniToken.transfer(toAddress, value, { from: addr })
