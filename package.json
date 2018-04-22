@@ -25,6 +25,8 @@
     "body-parser": "^1.16.1",
     "compression": "^1.7.1",
     "connect-session-sequelize": "^4.1.0",
+    "ethjs-contract": "^0.2.0",
+    "ethjs-query": "^0.3.6",
     "express": "^4.14.1",
     "express-session": "^1.15.1",
     "history": "^4.6.3",
