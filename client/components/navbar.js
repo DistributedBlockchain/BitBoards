@@ -4,16 +4,20 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
+const linkStyle = {
+  color: '#3b2064',
+  fontSize: '18px',
+}
 const Navbar = ({ handleClick, isLoggedIn }) => (
   <div>
-    <h1>BITBOARDS</h1>
-    <nav>
-        <div>
+    <nav style={{ backgroundColor: 'white', marginBottom: '20px' }}>
+        <div style={{ marginLeft: "30px", display: 'flex', justifyContent: 'flex-end', marginRight: '5%'}}>
           {/* The navbar will show these links after you log in */}
-          <Link to="/">Home</Link>
+          <h3 style={{ color: '#6441A4', display: 'inline', alignSelf: 'flex-start', marginRight: '65%'}}>BITBOARDS</h3>
+          <Link to="/bids" style={ linkStyle }>Bids</Link>
+          <Link to="/" style={ linkStyle }>Home</Link>
         </div>
     </nav>
-    <hr />
   </div>
 )
 

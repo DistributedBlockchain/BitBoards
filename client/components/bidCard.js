@@ -35,12 +35,12 @@ class BidCard extends React.Component {
     const item = this.props.itemInfo
     const fontStyle = { 
       fontSize: '175%',
-      color: 'black',
-      WebkitTextStroke: '.75px white',
+      color: 'white',
+      WebkitTextStroke: '.75px black',
       fontWeight: 'bold'
     }
     return (
-      <div style={{ flex: '0 0 33%', padding: '10px' }} key={item.key}>
+      <div style={{ flex: '0 0 33%', marginLeft: 'auto' }} key={item.key}>
         <Card
           className="large"
           header={
@@ -49,6 +49,8 @@ class BidCard extends React.Component {
           actions={
             [<Button key={item.key} className="bidsubmit" waves="light" onClick={this.onFieldSubmit} >Submit Bid</Button>]
           }>
+          <h5 style={{marginTop: '-10px', marginBottom: '10px' }}>{item.time}</h5>
+          <h5 style={{marginTop: '-10px', marginBottom: '10px' }}>Highest Bid: {item.bidAmount}</h5>
           <Input s={6} name="amount" label="Bid amount" validate type="number" placeholder="0.001" step="0.001" min="0.001" max="10000000000000" onChange={this.onFieldChange}>
             <Icon>attach_money</Icon>
           </Input>
