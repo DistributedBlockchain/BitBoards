@@ -6,4 +6,5 @@
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
 export {default as Bidding} from './bidding'
+export {default as DisplayImage} from './displayimage'
 export {Login, Signup} from './auth-form'

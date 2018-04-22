@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { DisplayImage } from './displayimage';
 import {Row, Input, Icon} from 'react-materialize'
 
 /**
@@ -9,16 +10,19 @@ import {Row, Input, Icon} from 'react-materialize'
 export const Bidding = props => {
   const { email } = props;
 
+  let imageUrl = 'http://icatchmedia.com/wp-content/uploads/bfi_thumb/bill_board-mf73xcotmc6px71v9ls4nkzvouhvq45skofq6g22r4.jpg'
+
   return (
     <div>
-      <Row>
-        <Input s={6} label="Bid amount" validate type="number">
+        <Row>
+        <Input s={6} label="Bid amount" validate type="number" placeholder="0.001" step="0.001" min="0.001" max="10000000000000">
           <Icon>attach_money</Icon>
         </Input>
         <Input s={6} label="Image URL" validate type="url">
           <Icon>image</Icon>
         </Input>
       </Row>
+      <DisplayImage img={imageUrl} />
     </div>
   );
 };
