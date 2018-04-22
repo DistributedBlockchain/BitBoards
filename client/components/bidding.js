@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { DisplayImage } from './displayimage';
-import {Row, Input, Icon} from 'react-materialize'
+import {Row, Input, Icon, Button} from 'react-materialize'
 
 /**
  * COMPONENT
@@ -22,6 +22,7 @@ export const Bidding = props => {
           <Icon>image</Icon>
         </Input>
       </Row>
+        <Button id="bidsubmit" waves='light'>Submit Bid</Button>
       <DisplayImage img={imageUrl} />
     </div>
   );
