@@ -1,0 +1,111 @@
+.brochure {
+    font-family: "Fira Sans", Helvetica, sans-serif;
+    background-color: #3a3a3a;
+}
+
+.brochure-content {
+}
+
+.brochure-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.brochure-header > h2 {
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.brochure-attract {
+    border-top: 1px solid #3a3a3a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-item,
+.brochure-image-listing,
+.actions,
+.partners {
+    display: flex;
+    flex-direction: row;
+}
+
+.brochure-image-listing {
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.brochure-image-container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 15px;
+}
+
+.brochure-image,
+.brochure-text {
+    width: 200px;
+}
+
+.brochure-image {
+    height: 200px;
+    border: 5px solid #fafafa;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.brochure-text {
+    font-weight: 300;
+    font-style: normal;
+}
+
+.headlines,
+.brochure-image-listing,
+.testimonials {
+    text-align: justify;
+    width: 60%;
+}
+
+.headlines {
+    text-align: center;
+}
+
+.testimonials {
+    padding-bottom: 15px;
+}
+
+.testimonials > h2 {
+    margin-top: 0
+}
+
+.partners {
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners > p {
+    width: 420px;
+}
+
+.partners .link {
+    color: #c8bef7;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}     
